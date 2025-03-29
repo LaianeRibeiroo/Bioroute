@@ -6,6 +6,10 @@
   <title>BioRoot - Logística Inteligente</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Raleway', sans-serif;
@@ -43,10 +47,10 @@
     .hero {
       width: 100%;
       height: 80vh;
-      background: url('https://i.imgur.com/Udk2kq6.jpeg') no-repeat center center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background-image: url('https://i.imgur.com/Udk2kq6.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     .section {
@@ -86,7 +90,6 @@
       padding: 30px 20px;
     }
 
-    /* Responsivo 👇 */
     @media (max-width: 768px) {
       .hero {
         height: 50vh;
