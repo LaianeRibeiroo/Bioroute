@@ -4,12 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BioRoot - Logística Inteligente</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Raleway', sans-serif;
       background-color: #f9f9f9;
+      color: #000;
     }
+
     header {
       background-color: #2c3e50;
       color: white;
@@ -21,32 +24,33 @@
       top: 0;
       z-index: 1000;
     }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
+
     .hero {
-      background: url('https://images.unsplash.com/photo-1607346563315-5c68b2bc39e4') no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
+      width: 100%;
+      height: 80vh;
+      background: url('https://i.imgur.com/Udk2kq6.jpeg') no-repeat center center/cover;
     }
-    .hero h1 {
-      color: black;
-    }
+
     .section {
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
     }
+
     .section h2 {
       color: #2c3e50;
     }
+
     .cta-btn {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 10px;
       background-color: #27ae60;
       color: white;
       padding: 12px 25px;
@@ -54,12 +58,21 @@
       text-decoration: none;
       font-size: 16px;
       border-radius: 5px;
+      font-weight: bold;
     }
+
     footer {
       background-color: #2c3e50;
       color: white;
       text-align: center;
       padding: 30px 20px;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        margin: 0 8px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -75,11 +88,7 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Logística Inteligente para Transporte de Animais</h1>
-    <p>Transporte com rastreamento, roteirização otimizada e suporte completo.</p>
-    <a href="#contato" class="cta-btn">Solicitar Demonstração</a>
-  </section>
+  <section class="hero"></section>
 
   <section id="problema" class="section">
     <h2>O Problema</h2>
